@@ -220,3 +220,20 @@ const changeSite = (data, status) => {
     status.changeSiteState("error");
   }
 };
+
+
+export const fetchLatestCommit = async (owner, repo) => {
+  const url = `https://api.github.com/repos/${owner}/${repo}/commits`;
+
+  try {
+    const response = await fetch(url);
+    if (!response.ok) {
+      throw new Error(`Error fetching data: ${response.status}`);
+    }
+    const data = await response.json();
+    return data[0]?.sha || "No commit found";
+  } catch (err) {
+    console.error("Error fetching latest commit:", err);
+    throw err;
+  }
+};
