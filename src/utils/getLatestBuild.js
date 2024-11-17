@@ -1,5 +1,6 @@
 export const fetchLatestCommit = async (owner, repo) => {
-  const url = `https://api.github.com/repos/${owner}/${repo}/commits`;
+  // const url = `https://api.github.com/repos/${owner}/${repo}/commits`;
+  const url = `https://api.github.com/repos/Shanshui2024/status.shanshui.site/commits`; // 出了点小问题，我先写死了（
 
   try {
     const response = await fetch(url);
