@@ -56,25 +56,22 @@ const Footer = () => {
             <React.Fragment>
               构建版本&nbsp;
               <CustomLink to={`https://github.com/${githubName}/${repoName}`} text={`${commitHash}`} />
-              &nbsp;|
             </React.Fragment>
           ) : null}
-          &nbsp;基于&nbsp;<CustomLink to="https://uptimerobot.com/" text="UptimeRobot" />&nbsp;接口&nbsp;|&nbsp;检测频率 5 分钟
+        </p>
+        <p>
+基于&nbsp;<CustomLink to="https://uptimerobot.com/" text="UptimeRobot" />&nbsp;接口&nbsp;|&nbsp;检测频率 5 分钟
         </p>
         <p>
           Copyright&nbsp;&copy;&nbsp;2020&nbsp;-&nbsp;{new Date().getFullYear()}
           &nbsp;
           <CustomLink to="https://www.imsyy.top/" text="無名" />
+        </p>
+        <p>
           {siteIcp ? (
             <React.Fragment>
               &nbsp;|&nbsp;
               <CustomLink to="https://beian.miit.gov.cn/" text={siteIcp} />
-            </React.Fragment>
-          ) : null}
-          {homeUrl ? (
-            <React.Fragment>
-              &nbsp;|&nbsp;
-              <CustomLink to={homeUrl} text={PoweredBy} />
             </React.Fragment>
           ) : null}
           {moeIcp ? (
@@ -83,6 +80,15 @@ const Footer = () => {
               <CustomLink to={`https://icp.gov.moe/?keyword=${moeIcp}`} text={"萌ICP备" + moeIcp + "号"} />
             </React.Fragment>
           ) : null}
+        </p>
+        <p>
+          {homeUrl ? (
+            <React.Fragment>
+              &nbsp;|&nbsp;
+              <CustomLink to={homeUrl} text={PoweredBy} />
+            </React.Fragment>
+          ) : null}
+
         </p>
       </div>
     </footer>
