@@ -70,13 +70,12 @@ const Footer = () => {
         <p>
           {siteIcp ? (
             <React.Fragment>
-              &nbsp;|&nbsp;
               <CustomLink to="https://beian.miit.gov.cn/" text={siteIcp} />
+              &nbsp;
             </React.Fragment>
           ) : null}
           {moeIcp ? (
             <React.Fragment>
-              &nbsp;|&nbsp;
               <CustomLink to={`https://icp.gov.moe/?keyword=${moeIcp}`} text={"萌ICP备" + moeIcp + "号"} />
             </React.Fragment>
           ) : null}
@@ -84,7 +83,6 @@ const Footer = () => {
         <p>
           {homeUrl ? (
             <React.Fragment>
-              &nbsp;|&nbsp;
               <CustomLink to={homeUrl} text={PoweredBy} />
             </React.Fragment>
           ) : null}
