@@ -1,3 +1,21 @@
+# 山水的监控站点
+
+本项目基于imsyy大佬的[Site-Status](https://github.com/imsyy/site-status)项目，经过二改后严格遵循源项目MIT协议 并在项目页和扩展页页脚标注原作者
+
+本项目新增了以下内容：
+
+- 对[萌国ICP备案](https://icp.gov.moe)的支持
+- 页脚外显Github存储库最新commit hash（作为构建版本）
+
+以下是原项目readme文件
+
+---
+
+
+
+
+
+
 # site-status
 
 一个基于 UptimeRobot API 的在线状态面板
